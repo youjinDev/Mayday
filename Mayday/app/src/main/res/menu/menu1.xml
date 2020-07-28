@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 교재 289pg 참고 (Java 코드 작성 시 290pg 참고하기) -->
+
+    <item
+        android:id="@+id/showLevel"
+        android:title="@string/menu_showLevel"></item>
+
+    <item
+        android:id="@+id/ChangeNickname"
+        android:title="@string/menu_changeName"></item>
+
+    <item
+        android:id="@+id/Helper"
+        android:title="@string/menu_help"></item>
+
+</menu>

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/ridibatang">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/ridibatang"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFB94"
+            android:fontFamily="@font/ridibatang" />
+
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFB94"
+            android:backgroundTint="#FDFB94"
+            android:clickable="false"
+            android:fontFamily="@font/ridibatang">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- <<<<<<<<<< "퀘스트" 화면 >>>>>>>>>> -->
+            <LinearLayout
+                android:id="@+id/tabMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 퀘스트 목록 생성되는 레이아웃 (비율 : 7) -->
+                <LinearLayout
+                    android:id="@+id/btnMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/startQuestBtn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/ridibatang"
+                        android:text="" />
+
+                    <!-- 가독성을 높이기 위한 구분선 추가 -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <Button
+                        android:id="@+id/startQuestBtn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/ridibatang" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <Button
+                        android:id="@+id/startQuestBtn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/ridibatang" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <Button
+                        android:id="@+id/startQuestBtn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/ridibatang" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <Button
+                        android:id="@+id/startQuestBtn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/ridibatang" />
+
+
+                </LinearLayout>
+
+                <!-- 퀘스트 추가하는 버튼이 담긴 레이아웃 (비율 : 1) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:background="#FDFB94"
+                    android:gravity="right|bottom">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/addQuestBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFFB00"
+                        android:clickable="true"
+                        app:srcCompat="@drawable/ic_add" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- <<<<<<<<<< "완료된 퀘스트" 화면 >>>>>>>>>> -->
+            <LinearLayout
+                android:id="@+id/tabFinish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--캘린더 삽입-->
+
+                <Toolbar
+                    android:id="@+id/toolBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/year_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ridibatang"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                </Toolbar>
+
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/compactcalendar_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:compactCalendarBackgroundColor="#ffffff"
+                    app:compactCalendarCurrentDayBackgroundColor="#FDFB94"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+                    app:compactCalendarCurrentSelectedDayIndicatorStyle="no_fill_large_indicator"
+                    app:compactCalendarEventIndicatorStyle="small_indicator"
+                    app:compactCalendarTargetHeight="250dp"
+                    app:compactCalendarTextColor="#000000"
+                    app:compactCalendarTextSize="12sp" />
+
+                <!-- 출력할 수 있는 파일의 개수 10개로 제한 -->
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+                                <TextView
+                                    android:id="@+id/openFile1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+                                />
+
+                                <TextView
+                                    android:id="@+id/openFile2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+                                />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+                                <TextView
+                                    android:id="@+id/openFile3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card5"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage5"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card6"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage6"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card7"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage7"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+                                <TextView
+                                    android:id="@+id/openFile7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card8"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage8"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card9"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage9"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card10"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_margin="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/openImage10"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:background="#FDFB94" />
+
+
+                                <TextView
+                                    android:id="@+id/openFile10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/ridibatang"
+                                    android:textSize="20dp"
+                                    android:maxLines="6"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+            <!-- <<<<<<<<<< "리워드" 화면 >>>>>>>>>> -->
+            <LinearLayout
+                android:id="@+id/tabReward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rwdText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/ridibatang"
+                    android:gravity="center"
+                    android:text="@string/rewardText"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:numColumns="4"></GridView>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

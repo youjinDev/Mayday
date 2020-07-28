@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/ridibatang"
+            android:text="공유하기"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#FDFB94"
+            android:layout_width="match_parent"
+            android:layout_height="53dp" />
+
+    </LinearLayout>
+    <!--타이틀바 -->
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:fontFamily="@font/ridibatang"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이 퀘스트를 친구와 공유해 보세요!"/>
+
+        <Button
+            android:fontFamily="@font/ridibatang"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/share_lit"
+            android:onClick="btnClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공유하기"/>
+    </LinearLayout>
+    <!--// 공유 버튼 -->
+</LinearLayout>

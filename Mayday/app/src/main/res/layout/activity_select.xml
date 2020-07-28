@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fontFamily="@font/ridibatang">
+
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFB94"/>
+
+    <LinearLayout
+        android:fontFamily="@font/ridibatang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:fontFamily="@font/ridibatang"
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Instructor1" />
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- <<<<<<<<<<  퀘스트 개수 입력 화면  >>>>>>>>>> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff">
+
+            <!-- 넘버피커로 변경 -->
+            <NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="500sp"/>
+
+            <!-- text에 해당하는 string도 변경함 -->
+            <TextView
+                android:fontFamily="@font/ridibatang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:gravity="center_horizontal"
+                android:text="@string/Inform1"
+                />
+
+        </LinearLayout>
+
+        <!-- <<<<<<<<<<  퀘스트 종류 입력 화면  >>>>>>>>>> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#fff">
+
+            <!-- 정렬을 위해서 버튼은 테이블레이아웃을 사용 -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:gravity="center">
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/RandomCatBtn"
+                        android:layout_width="200sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:layout_span="2"
+                        android:text="@string/CategoryRandom" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/IndoorCatBtn"
+                        android:layout_width="100sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:text="@string/CategoryIndoor" />
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/OutdoorCatBtn"
+                        android:layout_width="100sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:text="@string/CategoryOutdoor" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/DailyCatBtn"
+                        android:layout_width="100sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:text="@string/CategoryDaily" />
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/ChallengeCatBtn"
+                        android:layout_width="100sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:text="@string/CategoryChallenge" />
+                </TableRow>
+
+                <TableRow
+                    android:gravity="center">
+                    <Button
+                        android:fontFamily="@font/ridibatang"
+                        android:id="@+id/WriteCatBtn"
+                        android:layout_width="200sp"
+                        android:layout_height="90sp"
+                        android:layout_margin="5sp"
+                        android:layout_span="2"
+                        android:text="@string/CategoryWrite" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

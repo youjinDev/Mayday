@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fontFamily="@font/ridibatang"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- <<<<<<<<<< 리워드 클릭했을 때의 이미지 >>>>>>>>>> -->
+    <ImageView
+        android:id="@+id/rewardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        />
+    <!-- <<<<<<<<<< 리워드 클릭했을 때의 설명>>>>>>>>>> -->
+    <TextView
+        android:fontFamily="@font/ridibatang"
+        android:id="@+id/gridText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        />
+
+</LinearLayout>

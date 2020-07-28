@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="269dp"
+                android:layout_height="252dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/help1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FDFB94"
+        android:fontFamily="@font/ridibatang"
+        android:gravity="center"
+        android:text="1. 매일매일 새로운 퀘스트를 수행하세요"
+        android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="269dp"
+                android:layout_height="252dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/help2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FDFB94"
+        android:fontFamily="@font/ridibatang"
+        android:gravity="center"
+        android:text="2. 퀘스트 수행 기록을 작성해보세요"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="269dp"
+        android:layout_height="252dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/help3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FDFB94"
+        android:fontFamily="@font/ridibatang"
+        android:gravity="center"
+        android:text="3. 다양한 리워드를 모아보세요"
+        android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="254dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/helpp4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FDFB94"
+        android:fontFamily="@font/ridibatang"
+        android:gravity="center"
+        android:text="4. 마음에 드는 퀘스트를 꾹 눌러 공유해보세요"
+        android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
