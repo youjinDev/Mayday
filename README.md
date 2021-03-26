@@ -11,18 +11,19 @@
 - 게임성을 부가해 앱 사용 지속력 부여. (예- 달성한 퀘스트 누적 개수 n개당 유저 레벨 업/리워드 종류는 뱃지, 칭찬스티커, 과일, 보석, 꽃 등등 다양한 리워드로 수집욕구 자극.)
 - 유저가 직접 ‘나만의 퀘스트’를 작성할 수도 있음. 
 - 친구와 퀘스트 내용, 달성한 퀘스트, 레벨업 결과를 sns로 공유 가능
-- 퀘스트는 랜덤 출력이 기본이나 카테고리를 지정하여 출력하는 것도 가능
-	→ 출력 퀘스트 예시
-	<아웃도어 액티비티> 카테고리의 경우 : “오늘은 날씨가 참 좋네요. 햇빛을 	받으며 20분 이상 걸어볼까요?”
-	<인도어 액티비티> 카테고리의 경우 : “읽고 싶은, 혹은 읽고 있는 책이 있나	요? 읽는 걸 미루고 있었다면 세 장 이상 읽어봐요. 무슨 생각이 들었는지 공	유해요.”
+- 퀘스트는 랜덤 출력이 기본이나 카테고리를 지정하여 출력하는 것도 가능   
+	→ 출력 퀘스트 예시   
+	<아웃도어 액티비티> 카테고리의 경우 : “오늘은 날씨가 참 좋네요. 햇빛을 받으며 20분 이상 걸어볼까요?”   
+	<인도어 액티비티> 카테고리의 경우 : “읽고 싶은, 혹은 읽고 있는 책이 있나요? 읽는 걸 미루고 있었다면 세 장 이상 읽어봐요. 무슨 생각이 들었는지 공유해요.”   
 - 퀘스트 달성 인증 방식 - 사진 또는 글 업로드
 
 ## 1.3 시연 이미지
-![Alt text](Mayday/1.jpg)
+<img src="./1.jpg" width="500px" height="1200px">
+<img src="./2.jpg" width="500px" height="1200px">
+<img src="./3.jpg" width="500px" height="1200px">
 
 
 # 2. 기술 스택
------------
 - Android studio
 - JAVA
   + SQLite 이용
@@ -33,7 +34,7 @@
   + 메뉴이용
   + 카카오API
 
+# 3. Contact
 
-
-Google Play Store : https://play.google.com/store/apps/details?id=com.mayday.Mayday   
+Google Play Store : https://play.google.com/store/apps/details?id=com.mayday.Mayday     
 Contact Email : team8mayday8@gmail.com
