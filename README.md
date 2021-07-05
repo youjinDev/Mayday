@@ -1,5 +1,6 @@
 # 1. Mayday
 성신여자대학교 스마트모바일프로그래밍 수업에서 만든 팀 프로젝트입니다.   
+👍 Google Play Store : https://play.google.com/store/apps/details?id=com.mayday.Mayday  
 
 ## 1.1 기획 의도
 우울감이나 무력감, 번아웃 증후군에 시달리는 현대인들을 위해 간단하지만 보람을 느낄 수 있는 일일 퀘스트를 무작위로 제공합니다. 제공한 퀘스트 달성 시 격려 문구 출력과, 모을 수 있는 리워드를 제공해 수집욕구를 자극합니다.   
@@ -26,7 +27,7 @@
 # 2. 기술 스택
 - Android studio
 - JAVA
-  + SQLite 이용
+  + SQLite
   + Intent 사용
   + 스레드
   + 중복 layout
@@ -35,6 +36,5 @@
   + 카카오API
 
 # 3. Contact
-
-Google Play Store : https://play.google.com/store/apps/details?id=com.mayday.Mayday     
+   
 Contact Email : team8mayday8@gmail.com
