@@ -41,16 +41,22 @@
 
 
 # 2. 기술 스택
-- Android studio
-- JAVA
-  + SQLite
-  + Intent 사용
-  + 스레드
-  + 중복 layout
-  + 대화상자
-  + 메뉴이용
-  + 카카오API
+## IDE
+Android studio
+## Language
+Java
+## DB
+SQLite
+## etc
+ + Intent 사용
+ + 스레드
+ + 중복 layout
+ + 대화상자
+ + 메뉴이용
+ + 카카오API
 
-# 3. Contact
+# 3. Team & Contact
    
+![1](https://user-images.githubusercontent.com/67622600/124852028-9cb87480-dfde-11eb-9fd6-96c7ea044e65.png)
+
 Contact Email : team8mayday8@gmail.com
